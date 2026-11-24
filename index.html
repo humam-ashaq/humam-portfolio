@@ -1,0 +1,1579 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Humam Asathin Haqqani | Portofolio Sarjana Terapan Teknik Informatika
+    </title>
+    <meta
+      name="description"
+      content="Portofolio resmi Humam Asathin Haqqani - Sarjana Terapan Teknik Informatika, Universitas Harkat Negeri (Class of 2026). Web Developer & Software Engineer."
+    />
+    <meta
+      name="keywords"
+      content="Humam Asathin Haqqani, Teknik Informatika, Universitas Harkat Negeri, Portfolio, Web Developer, Software Engineer, Class of 2026"
+    />
+    <meta name="author" content="Humam Asathin Haqqani" />
+
+    <!-- Open Graph / Meta sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Humam Asathin Haqqani | Portofolio" />
+    <meta
+      property="og:description"
+      content="Sarjana Terapan Teknik Informatika - Universitas Harkat Negeri (Class of 2026)"
+    />
+
+    <!-- Google Fonts: Lora (Heading), Plus Jakarta Sans (Body), JetBrains Mono (Accent) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232D4A6E'/><text x='50%' y='65%' font-size='52' font-family='sans-serif' font-weight='800' fill='%23F7F4EE' text-anchor='middle'>H</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Background decorative glowing shapes -->
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="navbar-wrapper" id="header">
+      <nav class="navbar container">
+        <a href="#home" class="nav-logo" aria-label="Beranda Humam">
+          <span class="logo-text">Humam<span class="logo-dot">.</span></span>
+        </a>
+
+        <!-- Desktop Nav Menu -->
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="#about" class="nav-link" data-i18n="nav_about">Tentang</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-i18n="nav_skills"
+              >Keahlian</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-i18n="nav_projects"
+              >Proyek</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="nav-link" data-i18n="nav_experience"
+              >Pengalaman</a
+            >
+          </li>
+          <li>
+            <a
+              href="#certifications"
+              class="nav-link"
+              data-i18n="nav_certifications"
+              >Sertifikasi</a
+            >
+          </li>
+          <li>
+            <a href="#activities" class="nav-link" data-i18n="nav_activities"
+              >Aktivitas</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact"
+              >Kontak</a
+            >
+          </li>
+          <li class="mobile-only">
+            <a
+              href="assets/cv-humam.pdf"
+              target="_blank"
+              download
+              class="nav-link nav-link-cv"
+              data-i18n="nav_cv"
+              >Unduh CV</a
+            >
+          </li>
+        </ul>
+
+        <!-- Action Group: Segmented Language Switcher & CV Download -->
+        <div class="nav-actions">
+          <!-- Segmented Language Switcher Pill (ID | EN) -->
+          <div
+            class="lang-switch"
+            id="lang-switch"
+            role="group"
+            aria-label="Ganti Bahasa / Switch Language"
+          >
+            <button
+              type="button"
+              class="lang-option active"
+              data-lang="id"
+              id="lang-btn-id"
+              aria-pressed="true"
+            >
+              ID
+            </button>
+            <button
+              type="button"
+              class="lang-option"
+              data-lang="en"
+              id="lang-btn-en"
+              aria-pressed="false"
+            >
+              EN
+            </button>
+          </div>
+
+          <!-- Download CV Button in Header (Far Right) -->
+          <a
+            href="assets/cv-humam.pdf"
+            target="_blank"
+            download
+            class="nav-cv-btn"
+            id="nav-cv-btn"
+            title="Unduh Curriculum Vitae"
+          >
+            <svg
+              class="nav-cv-icon"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 4v13M18 11l-6 6-6-6" />
+            </svg>
+            <span data-i18n="nav_cv">Unduh CV</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- 1. HERO SECTION / HOME -->
+      <section class="section hero-section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="greeting-wave" aria-hidden="true">👋</span>
+              <span data-i18n="hero_status">Halo, saya Humam</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="hero-name">Humam Asathin Haqqani</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              <span class="highlight-role" data-i18n="hero_role"
+                >Sarjana Terapan Teknik Informatika</span
+              >
+              <span class="divider-dot">•</span>
+              <span class="highlight-univ">Universitas Harkat Negeri</span>
+              <span class="divider-dot">•</span>
+              <span class="highlight-cohort" data-i18n="hero_cohort"
+                >Class of 2026</span
+              >
+            </p>
+
+            <p class="hero-desc" data-i18n="hero_description">
+              Logic is just a daydream until it runs —
+              <span class="highlight-blue">Backend</span>,
+              <span class="highlight-brown">Mobile</span>,
+              <span class="highlight-blue">Data</span>, &amp;
+              <span class="highlight-brown">AI Enthusiast</span>.
+            </p>
+
+            <div class="hero-cta-group">
+              <a
+                href="#projects"
+                class="btn btn-accent"
+                data-i18n="hero_btn_projects"
+              >
+                Lihat Proyek <span class="btn-emoji">💻</span>
+              </a>
+              <a
+                href="#contact"
+                class="btn btn-outline"
+                data-i18n="hero_btn_contact"
+              >
+                Hubungi Saya <span class="btn-emoji">✉️</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Visual Card (Compact Photo with 5 Floating Tech Pills) -->
+          <div class="hero-visual">
+            <div class="profile-card compact-photo-card" id="profile-card">
+              <div class="profile-photo-wrapper">
+                <img
+                  src="assets/profile.jpg"
+                  alt="Humam Asathin Haqqani"
+                  class="profile-photo"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'assets/profile-placeholder.svg';
+                  "
+                />
+                <div class="photo-accent-ring"></div>
+              </div>
+
+              <!-- Floating Tech Pills (Positions and Color Themes randomized on load) -->
+              <div class="floating-pill pill-blue" data-pill="se">
+                <span class="pill-dot"></span>
+                <span>Software Engineering</span>
+              </div>
+
+              <div class="floating-pill pill-brown" data-pill="backend">
+                <span class="pill-dot"></span>
+                <span>Backend</span>
+              </div>
+
+              <div class="floating-pill pill-blue" data-pill="python">
+                <span class="pill-dot"></span>
+                <span>Python</span>
+              </div>
+
+              <div class="floating-pill pill-brown" data-pill="go">
+                <span class="pill-dot"></span>
+                <span>Go</span>
+              </div>
+
+              <div class="floating-pill pill-blue" data-pill="laravel">
+                <span class="pill-dot"></span>
+                <span>Laravel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. ABOUT ME SECTION -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="about_title">Tentang Saya</h2>
+            <div class="section-divider"></div>
+            <p class="section-lead about-lead" data-i18n="about_lead">
+              Lulusan Sarjana Terapan Teknik Informatika yang berfokus pada
+              Backend Engineering, Mobile Development, Data Science, dan
+              Kecerdasan Buatan (AI).
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <!-- Left Column: Bio Story & Metadata Pills -->
+            <div class="about-text-col">
+              <p class="about-para" data-i18n="about_p1">
+                Saya adalah <strong>Humam Asathin Haqqani</strong>, lulusan
+                <strong>Sarjana Terapan Teknik Informatika</strong> dari
+                <strong>Universitas Harkat Negeri Tegal</strong> dengan
+                antusiasme tinggi di dunia Teknologi Informasi, khususnya
+                <strong>Backend Development</strong> dan
+                <strong>Software Engineering</strong>.
+              </p>
+              <p class="about-para" data-i18n="about_p2">
+                Perpaduan latar belakang akademis dan beragam pengalaman
+                <em>freelance</em> di ranah teknis maupun operasional membekali
+                saya dalam menangani proyek kompleks, mengasah kemampuan
+                pemrograman yang kuat, serta menyelesaikan masalah secara
+                fleksibel.
+              </p>
+
+              <!-- Metadata Badges/Pills (Location, University, Cohort) -->
+              <div class="about-pills">
+                <span class="about-pill">
+                  <span class="about-pill-icon">📍</span>
+                  <span data-i18n="about_badge_loc">Tegal, Jawa Tengah</span>
+                </span>
+                <span class="about-pill">
+                  <span class="about-pill-icon">🎓</span>
+                  <span data-i18n="about_badge_univ"
+                    >Universitas Harkat Negeri</span
+                  >
+                </span>
+                <span class="about-pill">
+                  <span class="about-pill-icon">📅</span>
+                  <span data-i18n="about_badge_batch">Class of 2026</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Right Column: Project Statistics (1 Column, 4 Rows) -->
+            <div class="about-cards-col">
+              <!-- Row 1: Backend & Web Systems -->
+              <div class="project-stat-card">
+                <div class="stat-number-box stat-box-blue">
+                  <span data-i18n="stat_be_num">8+</span>
+                </div>
+                <div class="stat-info">
+                  <div class="stat-header">
+                    <h4 class="stat-title" data-i18n="stat_be_title">
+                      Backend &amp; Web Systems
+                    </h4>
+                    <span class="stat-icon" aria-hidden="true">💻</span>
+                  </div>
+                  <p class="stat-desc" data-i18n="stat_be_desc">
+                    Python, Laravel, Go, JavaScript • RESTful API, Database
+                    Optimization, &amp; Microservices
+                  </p>
+                </div>
+              </div>
+
+              <!-- Row 2: Mobile Applications -->
+              <div class="project-stat-card">
+                <div class="stat-number-box stat-box-brown">
+                  <span data-i18n="stat_mob_num">4+</span>
+                </div>
+                <div class="stat-info">
+                  <div class="stat-header">
+                    <h4 class="stat-title" data-i18n="stat_mob_title">
+                      Mobile Apps
+                    </h4>
+                    <span class="stat-icon" aria-hidden="true">📱</span>
+                  </div>
+                  <p class="stat-desc" data-i18n="stat_mob_desc">
+                    Flutter &amp; Android • Clean Architecture &amp; Integrasi
+                    API
+                  </p>
+                </div>
+              </div>
+
+              <!-- Row 3: AI & Data Projects -->
+              <div class="project-stat-card">
+                <div class="stat-number-box stat-box-blue">
+                  <span data-i18n="stat_ai_num">6+</span>
+                </div>
+                <div class="stat-info">
+                  <div class="stat-header">
+                    <h4 class="stat-title" data-i18n="stat_ai_title">
+                      AI &amp; Data Projects
+                    </h4>
+                    <span class="stat-icon" aria-hidden="true">🤖</span>
+                  </div>
+                  <p class="stat-desc" data-i18n="stat_ai_desc">
+                    Machine Learning, Computer Vision, Data Science, &amp;
+                    Pipeline Otomasi
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SKILLS SECTION -->
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="skills_title">
+              Skills &amp; Tech Stack
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-lead" data-i18n="skills_lead">
+              Teknologi, bahasa pemrograman, dan tools yang saya gunakan dalam pengembangan perangkat lunak.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Card 1: Backend Development -->
+            <div class="skill-group-card">
+              <div class="skill-group-header">
+                <span class="skill-icon-emoji" aria-hidden="true">⚙️</span>
+                <h3 class="skill-group-title" data-i18n="skill_cat_backend">Backend Development</h3>
+              </div>
+              <ul class="skill-chips">
+                <li class="chip">Flask</li>
+                <li class="chip">FastAPI</li>
+                <li class="chip">Go Gin</li>
+                <li class="chip">Laravel</li>
+                <li class="chip">ExpressJS</li>
+                <li class="chip">RESTful API</li>
+              </ul>
+            </div>
+
+            <!-- Card 2: Mobile Development -->
+            <div class="skill-group-card">
+              <div class="skill-group-header">
+                <span class="skill-icon-emoji" aria-hidden="true">📱</span>
+                <h3 class="skill-group-title" data-i18n="skill_cat_mobile">Mobile Development</h3>
+              </div>
+              <ul class="skill-chips">
+                <li class="chip">Flutter</li>
+                <li class="chip">Dart</li>
+                <li class="chip">GetX</li>
+                <li class="chip">Firebase</li>
+                <li class="chip">REST API Integration</li>
+              </ul>
+            </div>
+
+            <!-- Card 3: Web Development (Frontend) -->
+            <div class="skill-group-card">
+              <div class="skill-group-header">
+                <span class="skill-icon-emoji" aria-hidden="true">🌐</span>
+                <h3 class="skill-group-title" data-i18n="skill_cat_frontend">Web Development (Frontend)</h3>
+              </div>
+              <ul class="skill-chips">
+                <li class="chip">React</li>
+                <li class="chip">Vue.js</li>
+                <li class="chip">Svelte</li>
+                <li class="chip">Astro</li>
+                <li class="chip">Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <!-- Card 4: Databases & ORM -->
+            <div class="skill-group-card">
+              <div class="skill-group-header">
+                <span class="skill-icon-emoji" aria-hidden="true">🗄️</span>
+                <h3 class="skill-group-title" data-i18n="skill_cat_db">Databases &amp; ORM</h3>
+              </div>
+              <ul class="skill-chips">
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">MySQL</li>
+                <li class="chip">MongoDB</li>
+                <li class="chip">Supabase</li>
+                <li class="chip">SQLAlchemy</li>
+                <li class="chip">pgx &amp; GORM</li>
+              </ul>
+            </div>
+
+            <!-- Card 5: AI & Data Science -->
+            <div class="skill-group-card">
+              <div class="skill-group-header">
+                <span class="skill-icon-emoji" aria-hidden="true">🤖</span>
+                <h3 class="skill-group-title" data-i18n="skill_cat_ai">AI &amp; Data Science</h3>
+              </div>
+              <ul class="skill-chips">
+                <li class="chip">Pandas</li>
+                <li class="chip">TensorFlow</li>
+                <li class="chip">Scikit-learn</li>
+                <li class="chip">MediaPipe</li>
+                <li class="chip">Streamlit</li>
+                <li class="chip">Tableau</li>
+                <li class="chip">Computer Vision &amp; NLP</li>
+              </ul>
+            </div>
+
+            <!-- Card 6: Other Tools -->
+            <div class="skill-group-card">
+              <div class="skill-group-header">
+                <span class="skill-icon-emoji" aria-hidden="true">🛠️</span>
+                <h3 class="skill-group-title" data-i18n="skill_cat_tools">Other Tools</h3>
+              </div>
+              <ul class="skill-chips">
+                <li class="chip">Git &amp; GitHub</li>
+                <li class="chip">Docker</li>
+                <li class="chip">Postman</li>
+                <li class="chip">DBeaver</li>
+                <li class="chip">Vercel</li>
+                <li class="chip">Google Colab</li>
+                <li class="chip">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. PROJECTS SECTION -->
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="projects_title">
+              Portofolio Proyek
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-lead" data-i18n="projects_lead">
+              Sistem dan aplikasi yang saya bangun sepanjang perkuliahan, tugas akhir, magang industri, hingga proyek klien.
+            </p>
+          </div>
+
+          <!-- Project Filter Buttons -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">
+              <span class="filter-emoji">✨</span>
+              <span data-i18n="filter_all">Semua</span>
+            </button>
+            <button class="filter-btn" data-filter="backend">
+              <span class="filter-emoji">⚙️</span>
+              <span data-i18n="filter_backend">Backend</span>
+            </button>
+            <button class="filter-btn" data-filter="frontend">
+              <span class="filter-emoji">🎨</span>
+              <span data-i18n="filter_frontend">Frontend</span>
+            </button>
+            <button class="filter-btn" data-filter="mobile">
+              <span class="filter-emoji">📱</span>
+              <span data-i18n="filter_mobile">Mobile</span>
+            </button>
+            <button class="filter-btn" data-filter="fullstack">
+              <span class="filter-emoji">💻</span>
+              <span data-i18n="filter_fullstack">Fullstack</span>
+            </button>
+            <button class="filter-btn" data-filter="ai-data">
+              <span class="filter-emoji">🤖</span>
+              <span data-i18n="filter_ai">AI &amp; Data</span>
+            </button>
+          </div>
+
+          <!-- Projects Grid (3 Columns) -->
+                    <!-- Projects Grid (3 Columns) -->
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card" data-category="mobile ai-data" data-pid="p1">
+              <div class="project-thumb">
+                <svg class="mockup-svg" viewBox="0 0 280 170" width="100%" height="100%" aria-hidden="true">
+                  <g transform="translate(85, 8)">
+                    <rect x="0" y="0" width="110" height="155" rx="18" fill="#1E293B" stroke="#334155" stroke-width="2.5"/>
+                    <rect x="4" y="4" width="102" height="147" rx="15" fill="#F8FAFC"/>
+                    <rect x="38" y="8" width="34" height="6" rx="3" fill="#0F172A"/>
+                    <rect x="10" y="22" width="90" height="65" rx="8" fill="#E2E8F0"/>
+                    <circle cx="55" cy="54" r="18" fill="#2D4A6E" opacity="0.15"/>
+                    <text x="55" y="58" font-size="16" text-anchor="middle">📱</text>
+                    <rect x="16" y="70" width="78" height="13" rx="4" fill="#0F172A" opacity="0.85"/>
+                    <text x="55" y="79" font-size="7" font-family="sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">Preview Antarmuka 1</text>
+                    <rect x="10" y="93" width="42" height="24" rx="5" fill="#EBF1F7" stroke="#CBD5E1" stroke-width="0.8"/>
+                    <text x="31" y="104" font-size="6.5" font-family="sans-serif" fill="#2D4A6E" text-anchor="middle">Fitur A</text>
+                    <text x="31" y="113" font-size="8" font-family="sans-serif" font-weight="700" fill="#2D4A6E" text-anchor="middle">Aktif</text>
+                    <rect x="58" y="93" width="42" height="24" rx="5" fill="#F3E8DF" stroke="#CBD5E1" stroke-width="0.8"/>
+                    <text x="79" y="104" font-size="6.5" font-family="sans-serif" fill="#9E6240" text-anchor="middle">Fitur B</text>
+                    <text x="79" y="113" font-size="8" font-family="sans-serif" font-weight="700" fill="#9E6240" text-anchor="middle">Terhubung</text>
+                    <rect x="10" y="123" width="90" height="16" rx="8" fill="#2D4A6E"/>
+                    <text x="55" y="134" font-size="7.5" font-family="sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">Aksi Utama Sistem</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3 class="project-title">Judul Proyek 1</h3>
+                  <span class="project-scope-badge badge-coral">Scope Proyek</span>
+                </div>
+                <p class="project-desc">
+                  Deskripsi singkat mengenai proyek yang dikembangkan, mencakup latar belakang permasalahan, tujuan pembuatan sistem, serta solusi teknologi yang diterapkan.
+                </p>
+                <div class="project-chips">
+                  <span class="p-chip">Teknologi 1</span>
+                  <span class="p-chip">Teknologi 2</span>
+                  <span class="p-chip">Teknologi 3</span>
+                  <span class="p-chip">Teknologi 4</span>
+                </div>
+                <div class="project-actions-row">
+                  <button type="button" class="project-detail-link" data-open-modal="p1">
+                    <span data-i18n="project_view_mockup">Lihat Mockup &amp; Kontribusi</span>
+                    <span class="link-arrow">↗</span>
+                  </button>
+                  <button type="button" class="project-zoom-btn" data-open-modal="p1" aria-label="Pratinjau Judul Proyek 1">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-category="backend fullstack" data-pid="p2">
+              <div class="project-thumb">
+                <svg class="mockup-svg" viewBox="0 0 280 170" width="100%" height="100%" aria-hidden="true">
+                  <g transform="translate(35, 12)">
+                    <rect x="0" y="0" width="210" height="145" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+                    <circle cx="14" cy="14" r="4" fill="#EF4444"/>
+                    <circle cx="26" cy="14" r="4" fill="#F59E0B"/>
+                    <circle cx="38" cy="14" r="4" fill="#10B981"/>
+                    <rect x="60" y="8" width="120" height="12" rx="4" fill="#1E293B"/>
+                    <text x="120" y="17" font-size="7" font-family="monospace" fill="#94A3B8" text-anchor="middle">api.endpoint.internal/v1/service</text>
+                    <rect x="14" y="28" width="60" height="16" rx="4" fill="#064E3B"/>
+                    <text x="44" y="39" font-size="8" font-family="monospace" font-weight="700" fill="#34D399" text-anchor="middle">200 OK • Online</text>
+                    <rect x="80" y="28" width="58" height="16" rx="4" fill="#1E3A8A"/>
+                    <text x="109" y="39" font-size="8" font-family="monospace" font-weight="700" fill="#60A5FA" text-anchor="middle">POST /process</text>
+                    <rect x="14" y="50" width="182" height="66" rx="6" fill="#020617"/>
+                    <text x="24" y="66" font-size="7.5" font-family="monospace" fill="#F43F5E">"status": <tspan fill="#34D399">"success"</tspan>,</text>
+                    <text x="24" y="80" font-size="7.5" font-family="monospace" fill="#F43F5E">"service_id": <tspan fill="#38BDF8">"SRV-2026-001"</tspan>,</text>
+                    <text x="24" y="94" font-size="7.5" font-family="monospace" fill="#F43F5E">"execution_time": <tspan fill="#A78BFA">"12.4ms"</tspan></text>
+                    <rect x="14" y="122" width="182" height="15" rx="4" fill="#1E293B"/>
+                    <text x="105" y="132" font-size="7.5" font-family="monospace" fill="#94A3B8" text-anchor="middle">High-Performance Backend Engine</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3 class="project-title">Judul Proyek 2</h3>
+                  <span class="project-scope-badge badge-blue">Scope Proyek</span>
+                </div>
+                <p class="project-desc">
+                  Deskripsi singkat mengenai proyek yang dikembangkan, mencakup latar belakang permasalahan, tujuan pembuatan sistem, serta solusi teknologi yang diterapkan.
+                </p>
+                <div class="project-chips">
+                  <span class="p-chip">Teknologi 1</span>
+                  <span class="p-chip">Teknologi 2</span>
+                  <span class="p-chip">Teknologi 3</span>
+                  <span class="p-chip">Teknologi 4</span>
+                </div>
+                <div class="project-actions-row">
+                  <button type="button" class="project-detail-link" data-open-modal="p2">
+                    <span data-i18n="project_view_mockup">Lihat Mockup &amp; Kontribusi</span>
+                    <span class="link-arrow">↗</span>
+                  </button>
+                  <button type="button" class="project-zoom-btn" data-open-modal="p2" aria-label="Pratinjau Judul Proyek 2">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-category="mobile ai-data" data-pid="p3">
+              <div class="project-thumb">
+                <svg class="mockup-svg" viewBox="0 0 280 170" width="100%" height="100%" aria-hidden="true">
+                  <g transform="translate(85, 8)">
+                    <rect x="0" y="0" width="110" height="155" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2.5"/>
+                    <rect x="4" y="4" width="102" height="147" rx="15" fill="#1E293B"/>
+                    <rect x="38" y="8" width="34" height="6" rx="3" fill="#020617"/>
+                    <rect x="10" y="22" width="90" height="85" rx="8" fill="#0F172A"/>
+                    <circle cx="55" cy="58" r="22" fill="#2D4A6E" opacity="0.3"/>
+                    <circle cx="55" cy="58" r="8" fill="#38BDF8"/>
+                    <rect x="22" y="32" width="66" height="52" rx="4" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
+                    <rect x="20" y="90" width="70" height="12" rx="3" fill="#0369A1"/>
+                    <text x="55" y="99" font-size="7" font-family="sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">Modul Sensor: Aktif</text>
+                    <rect x="10" y="114" width="90" height="24" rx="6" fill="#020617"/>
+                    <text x="24" y="129" font-size="10" text-anchor="middle">⚡</text>
+                    <text x="58" y="129" font-size="7.5" font-family="sans-serif" font-weight="600" fill="#38BDF8">Inferensi Real-Time</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3 class="project-title">Judul Proyek 3</h3>
+                  <span class="project-scope-badge badge-green">Scope Proyek</span>
+                </div>
+                <p class="project-desc">
+                  Deskripsi singkat mengenai proyek yang dikembangkan, mencakup latar belakang permasalahan, tujuan pembuatan sistem, serta solusi teknologi yang diterapkan.
+                </p>
+                <div class="project-chips">
+                  <span class="p-chip">Teknologi 1</span>
+                  <span class="p-chip">Teknologi 2</span>
+                  <span class="p-chip">Teknologi 3</span>
+                  <span class="p-chip">Teknologi 4</span>
+                </div>
+                <div class="project-actions-row">
+                  <button type="button" class="project-detail-link" data-open-modal="p3">
+                    <span data-i18n="project_view_mockup">Lihat Mockup &amp; Kontribusi</span>
+                    <span class="link-arrow">↗</span>
+                  </button>
+                  <button type="button" class="project-zoom-btn" data-open-modal="p3" aria-label="Pratinjau Judul Proyek 3">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-category="frontend fullstack backend" data-pid="p4">
+              <div class="project-thumb">
+                <svg class="mockup-svg" viewBox="0 0 280 170" width="100%" height="100%" aria-hidden="true">
+                  <g transform="translate(30, 18)">
+                    <rect x="0" y="0" width="220" height="126" rx="8" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+                    <rect x="4" y="4" width="212" height="118" rx="6" fill="#F8FAFC"/>
+                    <rect x="4" y="4" width="212" height="16" fill="#E2E8F0"/>
+                    <circle cx="14" cy="12" r="3" fill="#EF4444"/>
+                    <circle cx="23" cy="12" r="3" fill="#F59E0B"/>
+                    <circle cx="32" cy="12" r="3" fill="#10B981"/>
+                    <rect x="44" y="8" width="100" height="8" rx="3" fill="#FFFFFF"/>
+                    <text x="94" y="14.5" font-size="5.5" font-family="sans-serif" fill="#64748B" text-anchor="middle">portal.aplikasi.com/dashboard</text>
+                    <rect x="12" y="26" width="70" height="14" rx="3" fill="#2D4A6E"/>
+                    <text x="47" y="35.5" font-size="6.5" font-family="sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">Dashboard Terpadu</text>
+                    <rect x="12" y="45" width="130" height="66" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+                    <rect x="12" y="45" width="130" height="14" fill="#F1F5F9"/>
+                    <text x="20" y="54" font-size="6" font-family="sans-serif" font-weight="700" fill="#475569">Modul Layanan</text>
+                    <text x="75" y="54" font-size="6" font-family="sans-serif" font-weight="700" fill="#475569">Status</text>
+                    <text x="115" y="54" font-size="6" font-family="sans-serif" font-weight="700" fill="#475569">Nilai</text>
+                    <text x="20" y="70" font-size="6" font-family="sans-serif" fill="#1E293B">Layanan A</text>
+                    <text x="75" y="70" font-size="6" font-family="sans-serif" fill="#059669">100% Selesai</text>
+                    <text x="115" y="70" font-size="6" font-family="sans-serif" font-weight="700" fill="#2D4A6E">Optimal</text>
+                    <text x="20" y="86" font-size="6" font-family="sans-serif" fill="#1E293B">Layanan B</text>
+                    <text x="75" y="86" font-size="6" font-family="sans-serif" fill="#059669">Aktif</text>
+                    <text x="115" y="86" font-size="6" font-family="sans-serif" font-weight="700" fill="#2D4A6E">Optimal</text>
+                    <rect x="150" y="45" width="58" height="66" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+                    <rect x="162" y="53" width="34" height="34" rx="3" fill="#1E293B"/>
+                    <rect x="166" y="57" width="10" height="10" fill="#FFFFFF"/>
+                    <rect x="182" y="57" width="10" height="10" fill="#FFFFFF"/>
+                    <rect x="166" y="73" width="10" height="10" fill="#FFFFFF"/>
+                    <text x="179" y="100" font-size="5.5" font-family="sans-serif" font-weight="700" fill="#1D4ED8" text-anchor="middle">Verifikasi QR</text>
+                    <path d="M-12 126 L232 126 L220 133 L-2 133 Z" fill="#94A3B8"/>
+                    <rect x="85" y="126" width="50" height="4" rx="2" fill="#CBD5E1"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3 class="project-title">Judul Proyek 4</h3>
+                  <span class="project-scope-badge badge-purple">Scope Proyek</span>
+                </div>
+                <p class="project-desc">
+                  Deskripsi singkat mengenai proyek yang dikembangkan, mencakup latar belakang permasalahan, tujuan pembuatan sistem, serta solusi teknologi yang diterapkan.
+                </p>
+                <div class="project-chips">
+                  <span class="p-chip">Teknologi 1</span>
+                  <span class="p-chip">Teknologi 2</span>
+                  <span class="p-chip">Teknologi 3</span>
+                  <span class="p-chip">Teknologi 4</span>
+                </div>
+                <div class="project-actions-row">
+                  <button type="button" class="project-detail-link" data-open-modal="p4">
+                    <span data-i18n="project_view_mockup">Lihat Mockup &amp; Kontribusi</span>
+                    <span class="link-arrow">↗</span>
+                  </button>
+                  <button type="button" class="project-zoom-btn" data-open-modal="p4" aria-label="Pratinjau Judul Proyek 4">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card" data-category="frontend ai-data backend" data-pid="p5">
+              <div class="project-thumb">
+                <svg class="mockup-svg" viewBox="0 0 280 170" width="100%" height="100%" aria-hidden="true">
+                  <g transform="translate(30, 15)">
+                    <rect x="0" y="0" width="220" height="135" rx="10" fill="#0B132B" stroke="#1C2541" stroke-width="1.5"/>
+                    <rect x="12" y="10" width="70" height="10" rx="3" fill="#1C2541"/>
+                    <text x="47" y="18" font-size="6.5" font-family="sans-serif" font-weight="700" fill="#6FFFE9" text-anchor="middle">LIVE METRICS FEED</text>
+                    <circle cx="198" cy="15" r="3.5" fill="#10B981"/>
+                    <text x="187" y="17.5" font-size="6" font-family="sans-serif" fill="#A5B4FC" text-anchor="end">Status: 99.9% Normal</text>
+                    <rect x="12" y="26" width="60" height="26" rx="4" fill="#1C2541"/>
+                    <text x="20" y="36" font-size="5.5" font-family="sans-serif" fill="#94A3B8">Metrik Utama</text>
+                    <text x="20" y="48" font-size="9" font-family="sans-serif" font-weight="700" fill="#6FFFE9">98.5%</text>
+                    <rect x="80" y="26" width="60" height="26" rx="4" fill="#1C2541"/>
+                    <text x="88" y="36" font-size="5.5" font-family="sans-serif" fill="#94A3B8">Throughput</text>
+                    <text x="88" y="48" font-size="9" font-family="sans-serif" font-weight="700" fill="#38BDF8">4,200 req/s</text>
+                    <rect x="148" y="26" width="60" height="26" rx="4" fill="#1C2541"/>
+                    <text x="156" y="36" font-size="5.5" font-family="sans-serif" fill="#94A3B8">Error Rate</text>
+                    <text x="156" y="48" font-size="9" font-family="sans-serif" font-weight="700" fill="#34D399">0.01%</text>
+                    <rect x="12" y="60" width="196" height="64" rx="6" fill="#1C2541" opacity="0.6"/>
+                    <path d="M16 100 Q 40 75, 60 90 T 100 80 T 140 70 T 175 88 T 204 68" fill="none" stroke="#6FFFE9" stroke-width="2"/>
+                    <path d="M16 100 Q 40 75, 60 90 T 100 80 T 140 70 T 175 88 T 204 68 L 204 120 L 16 120 Z" fill="#6FFFE9" opacity="0.12"/>
+                    <line x1="16" y1="75" x2="204" y2="75" stroke="#334155" stroke-dasharray="2 3" stroke-width="0.8"/>
+                    <line x1="16" y1="95" x2="204" y2="95" stroke="#334155" stroke-dasharray="2 3" stroke-width="0.8"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3 class="project-title">Judul Proyek 5</h3>
+                  <span class="project-scope-badge badge-brown">Scope Proyek</span>
+                </div>
+                <p class="project-desc">
+                  Deskripsi singkat mengenai proyek yang dikembangkan, mencakup latar belakang permasalahan, tujuan pembuatan sistem, serta solusi teknologi yang diterapkan.
+                </p>
+                <div class="project-chips">
+                  <span class="p-chip">Teknologi 1</span>
+                  <span class="p-chip">Teknologi 2</span>
+                  <span class="p-chip">Teknologi 3</span>
+                  <span class="p-chip">Teknologi 4</span>
+                </div>
+                <div class="project-actions-row">
+                  <button type="button" class="project-detail-link" data-open-modal="p5">
+                    <span data-i18n="project_view_mockup">Lihat Mockup &amp; Kontribusi</span>
+                    <span class="link-arrow">↗</span>
+                  </button>
+                  <button type="button" class="project-zoom-btn" data-open-modal="p5" aria-label="Pratinjau Judul Proyek 5">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card" data-category="backend fullstack" data-pid="p6">
+              <div class="project-thumb">
+                <svg class="mockup-svg" viewBox="0 0 280 170" width="100%" height="100%" aria-hidden="true">
+                  <g transform="translate(30, 15)">
+                    <rect x="0" y="0" width="220" height="135" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+                    <rect x="14" y="10" width="80" height="12" rx="3" fill="#1E293B"/>
+                    <text x="54" y="18.5" font-size="6.5" font-family="monospace" font-weight="700" fill="#E2E8F0" text-anchor="middle">CI/CD TEST PIPELINE</text>
+                    <rect x="155" y="10" width="52" height="12" rx="3" fill="#064E3B"/>
+                    <text x="181" y="18.5" font-size="6" font-family="monospace" font-weight="700" fill="#34D399" text-anchor="middle">STATUS: PASS</text>
+                    <rect x="14" y="32" width="40" height="24" rx="4" fill="#1E293B" stroke="#10B981" stroke-width="1.2"/>
+                    <text x="34" y="42" font-size="6" font-family="sans-serif" fill="#94A3B8" text-anchor="middle">Unit Test</text>
+                    <text x="34" y="51" font-size="7" font-family="sans-serif" font-weight="700" fill="#34D399" text-anchor="middle">✓ Selesai</text>
+                    <line x1="54" y1="44" x2="68" y2="44" stroke="#10B981" stroke-width="1.5"/>
+                    <rect x="68" y="32" width="40" height="24" rx="4" fill="#1E293B" stroke="#10B981" stroke-width="1.2"/>
+                    <text x="88" y="42" font-size="6" font-family="sans-serif" fill="#94A3B8" text-anchor="middle">API Test</text>
+                    <text x="88" y="51" font-size="7" font-family="sans-serif" font-weight="700" fill="#34D399" text-anchor="middle">✓ Selesai</text>
+                    <line x1="108" y1="44" x2="122" y2="44" stroke="#10B981" stroke-width="1.5"/>
+                    <rect x="122" y="32" width="40" height="24" rx="4" fill="#1E293B" stroke="#10B981" stroke-width="1.2"/>
+                    <text x="142" y="42" font-size="6" font-family="sans-serif" fill="#94A3B8" text-anchor="middle">Load Test</text>
+                    <text x="142" y="51" font-size="7" font-family="sans-serif" font-weight="700" fill="#34D399" text-anchor="middle">✓ Selesai</text>
+                    <line x1="162" y1="44" x2="176" y2="44" stroke="#10B981" stroke-width="1.5"/>
+                    <rect x="176" y="32" width="30" height="24" rx="4" fill="#047857"/>
+                    <text x="191" y="47" font-size="12" text-anchor="middle" fill="#FFFFFF">✓</text>
+                    <rect x="14" y="66" width="192" height="58" rx="5" fill="#020617"/>
+                    <text x="22" y="80" font-size="6.5" font-family="monospace" fill="#34D399">PASS: test_module_integration (0.012s)</text>
+                    <text x="22" y="92" font-size="6.5" font-family="monospace" fill="#34D399">PASS: test_performance_benchmark (0.035s)</text>
+                    <text x="22" y="104" font-size="6.5" font-family="monospace" fill="#34D399">PASS: test_database_transactions (0.021s)</text>
+                    <text x="22" y="116" font-size="6.5" font-family="monospace" fill="#60A5FA">Total: 100% lulus, 0 gagal</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-body">
+                <div class="project-header-row">
+                  <h3 class="project-title">Judul Proyek 6</h3>
+                  <span class="project-scope-badge badge-blue">Scope Proyek</span>
+                </div>
+                <p class="project-desc">
+                  Deskripsi singkat mengenai proyek yang dikembangkan, mencakup latar belakang permasalahan, tujuan pembuatan sistem, serta solusi teknologi yang diterapkan.
+                </p>
+                <div class="project-chips">
+                  <span class="p-chip">Teknologi 1</span>
+                  <span class="p-chip">Teknologi 2</span>
+                  <span class="p-chip">Teknologi 3</span>
+                  <span class="p-chip">Teknologi 4</span>
+                </div>
+                <div class="project-actions-row">
+                  <button type="button" class="project-detail-link" data-open-modal="p6">
+                    <span data-i18n="project_view_mockup">Lihat Mockup &amp; Kontribusi</span>
+                    <span class="link-arrow">↗</span>
+                  </button>
+                  <button type="button" class="project-zoom-btn" data-open-modal="p6" aria-label="Pratinjau Judul Proyek 6">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        </div>
+      </section>
+
+            <!-- 5. EXPERIENCE SECTION -->
+      <section class="section experience-section" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag" data-i18n="exp_tag">Rekam Jejak</span>
+            <h2 class="section-title" data-i18n="exp_title">
+              Pengalaman Kerja &amp; Akademik
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-lead" data-i18n="exp_lead">
+              Pengalaman praktis dalam pengembangan perangkat lunak, asistensi laboratorium, dan proyek profesional.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-badge" data-i18n="exp1_period">Tahun - Sekarang</span>
+                    <h3 class="timeline-title" data-i18n="exp1_role">Posisi / Peran 1</h3>
+                    <h4 class="timeline-company">Nama Perusahaan / Institusi</h4>
+                  </div>
+                  <span class="timeline-location">Lokasi (Remote / On-site)</span>
+                </div>
+                <p class="timeline-desc" data-i18n="exp1_desc">
+                  Deskripsi umum mengenai lingkup pekerjaan, tanggung jawab utama, dan peran dalam tim atau organisasi.
+                </p>
+                <ul class="timeline-points">
+                  <li data-i18n="exp1_point1">Uraian tugas harian, pengembangan fitur, atau modul sistem yang dikerjakan.</li>
+                  <li data-i18n="exp1_point2">Uraian kolaborasi dengan tim lintas disiplin, perancangan antarmuka, atau arsitektur sistem.</li>
+                  <li data-i18n="exp1_point3">Uraian metodologi kerja, standar penulisan kode, atau pengujian yang diterapkan.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">Keahlian 1</span>
+                  <span class="tag">Keahlian 2</span>
+                  <span class="tag">Keahlian 3</span>
+                  <span class="tag">Keahlian 4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-badge" data-i18n="exp2_period">Tahun - Tahun</span>
+                    <h3 class="timeline-title" data-i18n="exp2_role">Posisi / Peran 2</h3>
+                    <h4 class="timeline-company">Nama Perusahaan / Institusi</h4>
+                  </div>
+                  <span class="timeline-location">Lokasi (Kota / Kampus)</span>
+                </div>
+                <p class="timeline-desc" data-i18n="exp2_desc">
+                  Deskripsi umum mengenai lingkup pekerjaan, tanggung jawab utama, dan peran dalam tim atau organisasi.
+                </p>
+                <ul class="timeline-points">
+                  <li data-i18n="exp2_point1">Uraian tugas bimbingan, asistensi materi teknis, atau pengelolaan lingkungan kerja.</li>
+                  <li data-i18n="exp2_point2">Uraian evaluasi, review kode, atau penyampaian materi kepada peserta/mahasiswa.</li>
+                  <li data-i18n="exp2_point3">Uraian penyusunan modul panduan, dokumentasi, atau troubleshooting sistem.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">Keahlian 1</span>
+                  <span class="tag">Keahlian 2</span>
+                  <span class="tag">Keahlian 3</span>
+                  <span class="tag">Keahlian 4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div>
+                    <span class="timeline-badge" data-i18n="exp3_period">Tahun - Tahun</span>
+                    <h3 class="timeline-title" data-i18n="exp3_role">Posisi / Peran 3</h3>
+                    <h4 class="timeline-company">Nama Klien / Inisiatif Mandiri</h4>
+                  </div>
+                  <span class="timeline-location">Remote / Indonesia</span>
+                </div>
+                <p class="timeline-desc" data-i18n="exp3_desc">
+                  Deskripsi umum mengenai lingkup pekerjaan, tanggung jawab utama, dan peran dalam proyek mandiri atau klien.
+                </p>
+                <ul class="timeline-points">
+                  <li data-i18n="exp3_point1">Uraian analisis kebutuhan klien, perancangan solusi, dan pemilihan teknologi.</li>
+                  <li data-i18n="exp3_point2">Uraian implementasi pengembangan antarmuka, integrasi backend, dan optimasi performa.</li>
+                  <li data-i18n="exp3_point3">Uraian kepuasan pengguna dan pemeliharaan sistem pasca rilis.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">Keahlian 1</span>
+                  <span class="tag">Keahlian 2</span>
+                  <span class="tag">Keahlian 3</span>
+                  <span class="tag">Keahlian 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CERTIFICATIONS SECTION -->
+      <section class="section certifications-section" id="certifications">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag" data-i18n="cert_tag">Validasi Kualifikasi</span>
+            <h2 class="section-title" data-i18n="cert_title">
+              Sertifikasi &amp; Lisensi
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-lead" data-i18n="cert_lead">
+              Pengakuan kompetensi resmi dari institusi terakreditasi dan platform pembelajaran teknologi terkemuka.
+            </p>
+          </div>
+
+          <div class="certifications-grid">
+            <!-- Cert 1 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <div class="cert-badge-icon">🎖️</div>
+                <span class="cert-status" data-i18n="cert_verified">Terverifikasi</span>
+              </div>
+              <h3 class="cert-title" data-i18n="cert1_title">Nama Sertifikasi 1</h3>
+              <p class="cert-issuer">Nama Lembaga Penerbit / Institusi</p>
+              <div class="cert-details">
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_issue_date">Tahun Terbit:</span>
+                  <span class="cert-detail-value">Tahun</span>
+                </div>
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_id_label">No. Registrasi:</span>
+                  <span class="cert-detail-value code-font">ID-SERTIFIKASI-001</span>
+                </div>
+              </div>
+              <p class="cert-desc" data-i18n="cert1_desc">
+                Deskripsi kompetensi yang diuji, cakupan materi kurikulum, serta standar profesional yang divalidasi.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag-pill">Bidang Keahlian</span>
+              </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <div class="cert-badge-icon">📜</div>
+                <span class="cert-status" data-i18n="cert_verified">Terverifikasi</span>
+              </div>
+              <h3 class="cert-title" data-i18n="cert2_title">Nama Sertifikasi 2</h3>
+              <p class="cert-issuer">Nama Lembaga Penerbit / Institusi</p>
+              <div class="cert-details">
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_issue_date">Tahun Terbit:</span>
+                  <span class="cert-detail-value">Tahun</span>
+                </div>
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_id_label">No. Registrasi:</span>
+                  <span class="cert-detail-value code-font">ID-SERTIFIKASI-002</span>
+                </div>
+              </div>
+              <p class="cert-desc" data-i18n="cert2_desc">
+                Deskripsi kompetensi yang diuji, cakupan materi kurikulum, serta standar profesional yang divalidasi.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag-pill">Bidang Keahlian</span>
+              </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <div class="cert-badge-icon">🗄️</div>
+                <span class="cert-status" data-i18n="cert_verified">Terverifikasi</span>
+              </div>
+              <h3 class="cert-title" data-i18n="cert3_title">Nama Sertifikasi 3</h3>
+              <p class="cert-issuer">Nama Lembaga Penerbit / Institusi</p>
+              <div class="cert-details">
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_issue_date">Tahun Terbit:</span>
+                  <span class="cert-detail-value">Tahun</span>
+                </div>
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_id_label">No. Registrasi:</span>
+                  <span class="cert-detail-value code-font">ID-SERTIFIKASI-003</span>
+                </div>
+              </div>
+              <p class="cert-desc" data-i18n="cert3_desc">
+                Deskripsi kompetensi yang diuji, cakupan materi kurikulum, serta standar profesional yang divalidasi.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag-pill">Bidang Keahlian</span>
+              </div>
+            </div>
+
+            <!-- Cert 4 -->
+            <div class="cert-card">
+              <div class="cert-header">
+                <div class="cert-badge-icon">☁️</div>
+                <span class="cert-status" data-i18n="cert_verified">Terverifikasi</span>
+              </div>
+              <h3 class="cert-title" data-i18n="cert4_title">Nama Sertifikasi 4</h3>
+              <p class="cert-issuer">Nama Lembaga Penerbit / Institusi</p>
+              <div class="cert-details">
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_issue_date">Tahun Terbit:</span>
+                  <span class="cert-detail-value">Tahun</span>
+                </div>
+                <div class="cert-row">
+                  <span class="cert-detail-label" data-i18n="cert_id_label">No. Registrasi:</span>
+                  <span class="cert-detail-value code-font">ID-SERTIFIKASI-004</span>
+                </div>
+              </div>
+              <p class="cert-desc" data-i18n="cert4_desc">
+                Deskripsi kompetensi yang diuji, cakupan materi kurikulum, serta standar profesional yang divalidasi.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-tag-pill">Bidang Keahlian</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. ACTIVITIES SECTION -->
+      <section class="section activities-section" id="activities">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag" data-i18n="act_tag">Kepemimpinan &amp; Komunitas</span>
+            <h2 class="section-title" data-i18n="act_title">
+              Aktivitas &amp; Organisasi
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-lead" data-i18n="act_lead">
+              Keterlibatan aktif dalam organisasi kemahasiswaan, kompetisi teknologi, dan kontribusi komunitas.
+            </p>
+          </div>
+
+          <div class="activities-grid">
+            <!-- Activity 1 -->
+            <div class="activity-card">
+              <div class="activity-top">
+                <span class="activity-role-badge" data-i18n="act1_role">Peran / Jabatan 1</span>
+                <span class="activity-period">Tahun - Tahun</span>
+              </div>
+              <h3 class="activity-name" data-i18n="act1_name">Nama Organisasi / Kegiatan 1</h3>
+              <span class="activity-org">Nama Institusi / Penyelenggara</span>
+              <p class="activity-desc" data-i18n="act1_desc">
+                Deskripsi peran, tanggung jawab, dan program kerja yang dijalankan dalam organisasi atau kepanitiaan.
+              </p>
+              <div class="activity-highlight">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span data-i18n="act1_hl">Pencapaian utama atau dampak positif yang berhasil dicapai selama periode kepengurusan.</span>
+              </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="activity-card">
+              <div class="activity-top">
+                <span class="activity-role-badge" data-i18n="act2_role">Peran / Prestasi 2</span>
+                <span class="activity-period">Tahun</span>
+              </div>
+              <h3 class="activity-name" data-i18n="act2_name">Nama Kompetisi / Kegiatan 2</h3>
+              <span class="activity-org" data-i18n="act2_org">Nama Institusi / Penyelenggara</span>
+              <p class="activity-desc" data-i18n="act2_desc">
+                Deskripsi partisipasi dalam kegiatan, kolaborasi tim, dan perancangan ide solusi inovatif.
+              </p>
+              <div class="activity-highlight">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span data-i18n="act2_hl">Apresiasi atau pencapaian penghargaan yang diperoleh dalam ajang tersebut.</span>
+              </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="activity-card">
+              <div class="activity-top">
+                <span class="activity-role-badge" data-i18n="act3_role">Peran / Kepanitiaan 3</span>
+                <span class="activity-period">Tahun</span>
+              </div>
+              <h3 class="activity-name" data-i18n="act3_name">Nama Acara / Kegiatan 3</h3>
+              <span class="activity-org">Nama Institusi / Penyelenggara</span>
+              <p class="activity-desc" data-i18n="act3_desc">
+                Deskripsi peran dalam perencanaan acara, koordinasi teknis, dan pelaksanaan operasional kegiatan.
+              </p>
+              <div class="activity-highlight">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span data-i18n="act3_hl">Tingkat partisipasi atau keberhasilan teknis pelaksanaan acara secara keseluruhan.</span>
+              </div>
+            </div>
+
+            <!-- Activity 4 -->
+            <div class="activity-card">
+              <div class="activity-top">
+                <span class="activity-role-badge" data-i18n="act4_role">Peran / Kontributor 4</span>
+                <span class="activity-period">Tahun - Sekarang</span>
+              </div>
+              <h3 class="activity-name" data-i18n="act4_name">Nama Komunitas / Inisiatif 4</h3>
+              <span class="activity-org" data-i18n="act4_org">Komunitas / Forum Teknologi</span>
+              <p class="activity-desc" data-i18n="act4_desc">
+                Deskripsi keaktifan berbagi pengetahuan, diskusi rutin, dan kontribusi terhadap komunitas terbuka.
+              </p>
+              <div class="activity-highlight">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span data-i18n="act4_hl">Dukungan dan bimbingan yang konsisten bagi rekan sejawat dan anggota komunitas.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. CONTACTS SECTION -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag" data-i18n="contact_tag"
+              >Mari Berkolaborasi</span
+            >
+            <h2 class="section-title" data-i18n="contact_title">
+              Hubungi Saya
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-lead" data-i18n="contact_lead">
+              Tertarik untuk berkolaborasi, mendiskusikan peluang proyek, atau
+              menawarkan posisi magang/kerja? Jangan ragu untuk mengirim pesan!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Information Cards -->
+            <div class="contact-info-col">
+              <h3 class="contact-subtitle" data-i18n="contact_subheading">
+                Informasi Kontak Langsung
+              </h3>
+              <p class="contact-intro" data-i18n="contact_intro">
+                Saya selalu terbuka untuk berdiskusi seputar rekayasa perangkat
+                lunak, proyek open source, atau potensi kemitraan profesional.
+              </p>
+
+              <div class="contact-cards">
+                <!-- Item 1: Email -->
+                <a
+                  href="mailto:email.anda@domain.com"
+                  class="contact-method-card"
+                >
+                  <div class="method-icon">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label" data-i18n="contact_email_label"
+                      >Email Resmi</span
+                    >
+                    <strong class="method-val"
+                      >email.anda@domain.com</strong
+                    >
+                    <span class="method-hint" data-i18n="contact_email_hint"
+                      >Klik untuk mengirim surel</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Item 2: WhatsApp / Phone -->
+                <a
+                  href="#contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-method-card"
+                >
+                  <div class="method-icon">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label" data-i18n="contact_phone_label"
+                      >WhatsApp / Telepon</span
+                    >
+                    <strong class="method-val">+62 812-xxxx-xxxx</strong>
+                    <span class="method-hint" data-i18n="contact_phone_hint"
+                      >Respon cepat via pesan</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Item 3: LinkedIn -->
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-method-card"
+                >
+                  <div class="method-icon">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label">LinkedIn</span>
+                    <strong class="method-val"
+                      >linkedin.com/in/username</strong
+                    >
+                    <span class="method-hint" data-i18n="contact_li_hint"
+                      >Koneksi profesional & jaringan</span
+                    >
+                  </div>
+                </a>
+
+                <!-- Item 4: Location -->
+                <div class="contact-method-card non-interactive">
+                  <div class="method-icon">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="method-label" data-i18n="contact_loc_label"
+                      >Lokasi Domisili</span
+                    >
+                    <strong class="method-val">Indonesia</strong>
+                    <span class="method-hint" data-i18n="contact_loc_hint"
+                      >Tersedia untuk kerja Remote & On-site</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-col">
+              <div class="form-wrapper">
+                <h3 class="form-title" data-i18n="form_title">
+                  Kirim Pesan Langsung
+                </h3>
+                <p class="form-desc" data-i18n="form_desc">
+                  Isi formulir di bawah ini dan saya akan merespon sesegera
+                  mungkin.
+                </p>
+
+                <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                    <label
+                      for="name"
+                      class="form-label"
+                      data-i18n="form_name_label"
+                      >Nama Lengkap</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      required
+                      placeholder="Contoh: Budi Santoso"
+                      data-i18n-ph="form_name_ph"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      for="email"
+                      class="form-label"
+                      data-i18n="form_email_label"
+                      >Alamat Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      required
+                      placeholder="nama@perusahaan.com"
+                      data-i18n-ph="form_email_ph"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      for="subject"
+                      class="form-label"
+                      data-i18n="form_subject_label"
+                      >Subjek Pesan</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                      required
+                      placeholder="Tawaran Proyek / Pertanyaan Kerja Sama"
+                      data-i18n-ph="form_subject_ph"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      for="message"
+                      class="form-label"
+                      data-i18n="form_message_label"
+                      >Isi Pesan</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      class="form-control"
+                      required
+                      placeholder="Ceritakan detail proyek atau hal yang ingin Anda diskusikan..."
+                      data-i18n-ph="form_message_ph"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-accent btn-block"
+                    id="form-submit-btn"
+                  >
+                    <span data-i18n="form_submit_btn"
+                      >Kirim Pesan Sekarang</span
+                    >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                  </button>
+                </form>
+
+                <!-- Feedback alert box -->
+                <div
+                  id="form-alert"
+                  class="form-alert"
+                  role="alert"
+                  style="display: none"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Detail Modal Dialog -->
+      <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="project-modal-backdrop" id="modal-backdrop"></div>
+        <div class="project-modal-dialog">
+          <div class="modal-content-body" id="modal-content-body">
+            <!-- Injected dynamically via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+              <span class="logo-text"
+                >Humam<span class="logo-dot">.</span></span
+              >
+            </a>
+            <p class="footer-bio" data-i18n="footer_bio">
+              Humam Asathin Haqqani • Sarjana Terapan Teknik Informatika,
+              Universitas Harkat Negeri (Class of 2026).
+            </p>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-heading" data-i18n="footer_nav_heading">
+              Navigasi Cepat
+            </h4>
+            <ul class="footer-links">
+              <li><a href="#home" data-i18n="nav_home">Beranda</a></li>
+              <li><a href="#about" data-i18n="nav_about">Tentang</a></li>
+              <li><a href="#skills" data-i18n="nav_skills">Keahlian</a></li>
+              <li><a href="#projects" data-i18n="nav_projects">Proyek</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-heading" data-i18n="footer_portfolio_heading">
+              Portofolio
+            </h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#experience" data-i18n="nav_experience">Pengalaman</a>
+              </li>
+              <li>
+                <a href="#certifications" data-i18n="nav_certifications"
+                  >Sertifikasi</a
+                >
+              </li>
+              <li>
+                <a href="#activities" data-i18n="nav_activities">Aktivitas</a>
+              </li>
+              <li><a href="#contact" data-i18n="nav_contact">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            &copy; <span id="current-year">2026</span>
+            <strong>Humam Asathin Haqqani</strong>.
+            <span data-i18n="footer_rights"
+              >Hak Cipta Dilindungi. Dibuat dengan HTML, CSS & JS murni.</span
+            >
+          </p>
+          <p class="footer-gh">
+            <span class="gh-tag">GitHub Pages Ready 🚀</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      aria-label="Kembali ke atas"
+      title="Kembali ke atas"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

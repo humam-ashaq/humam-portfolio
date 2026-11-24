@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D4A6E"/>
+      <stop offset="100%" stop-color="#3D5F8A"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F4EE"/>
+      <stop offset="100%" stop-color="#EADBCE"/>
+    </linearGradient>
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9E6240"/>
+      <stop offset="100%" stop-color="#865032"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect width="300" height="300" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle pattern ring -->
+  <circle cx="150" cy="150" r="135" fill="none" stroke="#F7F4EE" stroke-opacity="0.2" stroke-width="3" stroke-dasharray="6 6"/>
+
+  <!-- Body / Shoulders -->
+  <path d="M60,285 C60,225 105,200 150,200 C195,200 240,225 240,285 Z" fill="url(#clothGrad)"/>
+  
+  <!-- Collar / Shirt Detail -->
+  <path d="M130,200 L150,230 L170,200 Z" fill="#F7F4EE"/>
+
+  <!-- Neck -->
+  <rect x="135" y="165" width="30" height="38" rx="4" fill="url(#skinGrad)"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="150" cy="125" rx="52" ry="60" fill="url(#skinGrad)"/>
+
+  <!-- Hair / Silhouette Modern Style -->
+  <path d="M98,115 C96,75 125,55 155,55 C185,55 205,75 202,110 C195,85 180,72 150,72 C120,72 105,88 98,115 Z" fill="#2A201A"/>
+  
+  <!-- Monogram Initials Tag at bottom -->
+  <rect x="100" y="245" width="100" height="28" rx="14" fill="#F7F4EE" fill-opacity="0.95"/>
+  <text x="150" y="264" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#2D4A6E" text-anchor="middle" letter-spacing="1.5">HUMAM</text>
+</svg>
